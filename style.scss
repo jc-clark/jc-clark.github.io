@@ -1,0 +1,253 @@
+---
+---
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/* ------------ Core Style -------------- */
+
+
+body
+{
+    margin-top: 20px ! important;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+i
+{
+    text-indent: 0;
+}
+
+table {
+  width:100%;
+  border-collapse:collapse;
+  font-size:14px;
+}
+
+th, td {
+  text-align:left;
+  padding:5px 10px;
+  border-bottom:1px solid #eee;
+}
+
+th.title {
+  width: 30%;
+}
+
+/* ------------ Sidebar Style -------------- */
+
+#picture{
+    width:150px;
+    height:150px;
+    border-radius:5%;
+    background-size: cover;
+    margin-bottom: 8px;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100%;
+}
+
+input[data-function*='swipe'] {
+  position: absolute;
+  opacity: 0;
+}
+
+label[data-function*='swipe'] {
+  position: absolute;
+  color: #8C8C8C;
+  top: 30px;
+  left: 30px;
+  z-index: 1;
+  display: block;
+  text-align: center;
+  transform: translate3d(0,0,0);
+  transition: transform .3s;
+}
+
+input[data-function*='swipe']:checked ~ label[data-function*='swipe'] {
+  transform: translate3d(260px,0,0);
+}
+
+#social-icons
+{
+    font-size:  1.1em;
+    display: block;
+}
+
+#social-icons ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#social-icons li {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+#social-icons a {
+    font-size: 16px;
+    color: rgb(162, 163, 163);
+}
+
+/* ------------ Content Style -------------- */
+
+.content {
+  flex: 1;
+  padding: 80px 30px;
+  transform: translate3d(0,0,0);
+  transition: transform .3s;
+
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #666;
+  font-weight: 300;
+}
+
+.content hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #F7F1F1;
+    border-bottom: 1px solid #fff;
+}
+
+.content h1 {
+    font-weight: normal;
+    color: #696969;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.content h2 {
+    font-weight: normal;
+    margin-bottom: 5px;
+    color: #666666;
+    font-weight: bold;
+}
+
+.content h3 {
+    font-weight: normal;
+    margin-bottom: 5px;
+    color: #666666;
+    font-weight: bold;
+}
+
+.content p
+{
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+    font-weight: 300;
+}
+
+.content a {
+
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: normal;
+    font-style: normal;
+    color: #8C8C8C;
+    font-weight: 300;
+
+}
+
+.content pre
+{
+    border:none;
+    width: 70%;
+
+    /* Generic font style */
+    font-family: Arial,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 19.2px;
+    word-spacing: 0px;
+    color:#777777;
+}
+
+.content img
+{
+  display: block;
+  max-width: 100%;
+  margin: 0 0 1rem;
+  border-radius: 2px;
+}
+
+input[data-function*='swipe']:checked ~ .content {
+  transform: translate3d(180px,0px,0px);
+}
+
+input[data-function*='swipe']:checked ~ .sidebar {
+  transform: translate3d(0px,0px,0px);
+  .menu {
+    li {
+      width: 100%;
+    }
+  }
+}
+
+.sidebar {
+  transform: translate3d(-180px,0px,0px);
+  position: absolute;
+  width: 180px;
+  color: #eee;
+  left: 0;
+  height: 100%;
+  transition: all .3s;
+}
+
+.menu {
+
+  font-size:  1.1em;
+  display: block;
+  padding-left: 15px;
+
+  p
+  {
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    background-color: #fff;
+    font-size: 13px;
+    line-height: normal;
+    font-style: normal;
+    color: #8C8C8C;
+    font-weight: 300;
+  }
+
+  ul
+  {
+    list-style: none;
+     margin: 0px;
+     padding: 0px;
+  }
+
+  li {
+    padding: 10px;
+    list-style: none;
+    width: 0%;
+    line-height: 1.2rem;
+    font-weight: 300;
+
+
+    a{
+
+      font-family: "Roboto Condensed", Arial, sans-serif;
+      background-color: #fff;
+      font-size: 13px;
+      line-height: normal;
+      font-style: normal;
+      color: #8C8C8C;
+      font-weight: 300;
+
+    }
+
+  }
+}
