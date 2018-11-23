@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Taken is a two column minimalist Jekyll theme.
+Theme based on [Taken](http://theme-chapter.tumblr.com/).
 
-Taken is based on [chapter tumblr theme.](http://theme-chapter.tumblr.com/)
-
-You can fork taken from [here.](https://github.com/vfalanis/taken)
+[fork](https://github.com/vfalanis/taken).
