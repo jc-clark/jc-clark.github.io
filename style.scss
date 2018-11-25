@@ -9,8 +9,9 @@
 body
 {
     margin-top: 20px ! important;
-    overflow-x: hidden;
+    overflow-x: visible;
     height: 100%;
+    width: 80%;
 }
 
 i
@@ -75,7 +76,7 @@ th.title {
 
 .content {
   flex: 1;
-  padding: 80px 30px; 
+  padding: 20px; 
   transform: translate3d(180px,0,0);
   transition: transform .3s;
 
