@@ -1,20 +1,6 @@
-# Site settings
-title: Joe Clark
-email: joecclark@gmail.com
-baseurl: "" # the subpath of your site, e.g. /blog
-#url: "http://yourdomain.com" # the base hostname & protocol for your site
-
-# Sidebar settings
-description: And I'm wondering what it is I should do;<br>It's so hard to keep this smile from my face.
-
-# Social icons
-facebook: username
-linkedin: username
-github: username
-deviantart: username
-codepen: username
-
-footer: © Taken theme
-
-# Build settings
-markdown: kramdown
+title: Minimal theme
+logo: /assets/img/logo.png
+description: Minimal is a theme for GitHub Pages.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-minimal
