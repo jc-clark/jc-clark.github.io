@@ -1,35 +1,8 @@
 ---
 layout: default
 ---
+Thanks for stopping by. Check out my projects on the sidebar if you feel so inclined. 
 
-## Tunes Occurring 
+Whatever you do, I hope you have a nice day and find space to take care of yourself and others. 
 
-January, 2019
-<div class='embed-container'>
-<iframe src="https://open.spotify.com/embed/user/joecclark/playlist/7H28ClsB32xps3mMK2Yr3O" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-</div>
-
-December, 2018
-<div class='embed-container'>
-  <iframe src="https://open.spotify.com/embed/user/joecclark/playlist/4B6NkjQE9njlHFnoKoptsD" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-</div>
-
-November, 2018
-<div class='embed-container'>
-<iframe src="https://open.spotify.com/embed/user/joecclark/playlist/0eAig3F89Fk3PYaCRAhRzg" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-</div>
-
-October, 2018
-<div class='embed-container'>
-<iframe src="https://open.spotify.com/embed/user/joecclark/playlist/2CdUU1vreONrJOCH7WXMZ8" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-</div>
-
-September, 2018
-<div class='embed-container'>
-<iframe src="https://open.spotify.com/embed/user/joecclark/playlist/1NQQvCrIQqM9ucp7fUrqjZ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-</div>
-
-August, 2018
-<div class='embed-container'>
-<iframe src="https://open.spotify.com/embed/user/joecclark/playlist/7lXXcZWwi0U87TnOcJXXzB" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-</div>
+Walk in baby steps. It's more fun.
