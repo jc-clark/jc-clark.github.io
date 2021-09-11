@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<style>
+#map {
+    position: fixed;
+    width:50%;
+}
+#features {
+    width: 50%;
+    margin-left: 50%;
+    font-family: Tw Cen MT;
+    overflow-y: scroll;
+    background-color: #fafafa;
+}
+section {
+    padding:  25px 50px;
+    line-height: 25px;
+    border-bottom: 1px solid #ddd;
+    opacity: 0.25;
+    font-size: 16px;
+}
+section.active {
+    opacity: 1;
+}
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 1500px;
+}
+</style>
+
+<div id='map'></div>
+<div id='features'>
+    <section id='welcome' class='active'>
+        <h3>Hey, there!</h3>
+        <p>My name is Joe Clark and you found my resumap. Welcome!<br><br>A resume can only say so much. And they tend to feel robotic, don't they? I built this resumap to fill the gaps in my resume. But really, I just wanted to try Mapbox and Github and this was a perfect first project. So if you want to know a little bit more about who I am, sit back, relax, and enjoy the flight.</p>
+    </section>
+    <section id='seattleu' class='active'>
+        <h3>Seattle University</h3>
+        <p>Seattle University introduced me to my potential as an emerging adult. I flew through majors like a kid at the arcade with too many quarters. Mechanical Engineering introduced me to Physics, which I loved. So I added it. The core courses showed me Philosophy, which was awesome. So I added it. Sociology and Psychology were sounding pretty cool as well. So I decided to do all the things, dropped my other majors, and earned a BA in Liberal Studies. I obtained a minor in Physics because I always want a science nerd quantum-tucked in my pocket for a rainy day...we all have our quarks.
+    </section>
+    <section id='join'>
+        <h3>JOIN</h3>
+        <p>I hopped on the save-the-world train and eagerly joined the Jesuit Volunteer Corps Northwest. Service placements are an integral part of the program and JVC Northwest sent me to a place in Portland, Oregon called <a href="https://joinpdx.org/">JOIN.</a><br><br>JOIN completely transformed what I knew about homelessness. Folks could access our services and get clean clothes, housing assistance, and showers. Many came to have a place to weather the PNW weather. The bustling day-space allowed me to connect with people and listen to stories of hardship, love, and loss. <br><br>As the Immersion Coordinator, I planned and led multi-day immersions in order to connect groups of students with people experiencing homelessness. We ate at soup kitchens, we volunteered, we jumped in dumpsters, and it was always co-led by someone who has or was experiencing homelessness. I got to be a bridge builder, a connector of people who may not have connected otherwise. The best part was witnessing huge transformations within the perspectives of the participants. Nothing better than watching world-views get rocked.</p>
+    </section>
+    <section id='aaaa'>
+        <h3>Alaskan AIDS Assistance Association</h3>
+        <p>The Jesuit Volunteer Corps Northwest shook me and I didn't feel done yet. Big questions and bigger ideas were at work and so I signed on for another year. I was going to Alaska. <br><br>At JOIN, I met a lot of people who were suffering from addiction. It is also a hot-topic within my family. But I never knew much about it or, really, the people affected by it. So I chose to work at the <a href="http://www.alaskanaids.org/">Alaskan AIDS Assistance Association</a> and led the Anchorage Syringe Exchange. People came to me to get clean needles and dispose of dirty ones. Alongside the exchange, I administered HIV and Hepatitis-C tests.<br><br>The tests included one-on-one risk assessments which were centered on finding plausible solutions to lower an individual's risk of spreading diseases. For many, it was an incredible relief to open up to someone who didn't judge them and didn't know their friends. For me, it was an opportunity to open up my heart and empathize with people who really needed it.</p>
+    </section>
+    <section id='bbbs'>
+        <h3>Big Brothers Big Sisters of Alaska</h3>
+        <p>JVC Northwest was done. But The Land of the Midnight Sun still called my name. So, I hopped on a plane and moved to Juneau.<br><br>There are infinite factors that contribute to a person's adversity and marginalization. The diversity in storyline is staggering. But one commonality rang true among nearly every person I met. Somewhere along the line, broken relationships contributed to their hardships. <a href="http://www.bbbsak.org/">Big Brothers Big Sisters</a> was my way of connecting with that issue.<br><br>I interviewed potential Bigs and Littles and matched them together based on commonalities and personality...I was a professional friend matcher. It's wonderful to be able to say I had a part in so many wholesome friendships. And I got paid to do it? In the most beautiful town I had ever seen? Swoon. 
+        </p>
+    </section>
+    <section id='wssb'>
+        <h3>Washington State School for the Blind</h3>
+        <p>After a few years in Alaska, it was time to bid fare well to the Last Frontier. I set my sighs back at home to be closer to my family. I landed a gig at the <a href="https://www.wssb.wa.gov/wp/">Washington State School for the Blind</a>. I was a substitute teacher, and residence life counselor. After school each day, the students would come back to their cottages where we would work on building life-skills to foster independence.<br><br>WSSB is a particularly wonderful place. It introduced me to a culture I had never been immersed in before, where visual impairment is the status quo, and introduced me to so many inspiring and incredible people.</p>
+    </section>
+    <section id='appalachiantrail'>
+        <h3>Appalachian Trail</h3>
+        <p>Last summer (2016): school was out, the sun was shining, and my girlfriend was walking from Georgia to Maine.  Heck yes, I had to join!<br><br>She walked 2,189.1 miles. The ".1" matters. I managed to hobble out a measly 1,160-something. We lived immersed in the sounds of the woods. We would walk 10 miles by lunch time. 10 more after. One day, we walked 30 miles. Another we hiked 19, bagged 6 mountain peaks, ran the last 7.5 miles, and still made it to camp before sunset. I'm only kind of exagerating. We ate enough food to feed a human being for several years. We embraced beautiful people into our "tramily." My trail name was Frog King.</p>
+    </section>
+<section id='mapbox'>
+        <h3>Mapbox</h3>
+        <p>Insatiable curiosity and excitement about the future of location based applications led me to Mapbox. I had never coded, or set up a repository in GitHub, and hadn't touched HTML since I customized my Myspace page forever ago.<br><br>Mapbox's amazing <a href="https://www.mapbox.com/help/>documentation</a> and <a href="https://www.mapbox.com/help/tutorials/>tutuorials</a> helped me jump right in with maps. Now I work on the <a href="https://www.mapbox.com/about/team/joe-clark/here">support team</a> and get to spend my days helping folks feel happy and comfortable with our tools. Every day is another adventure and I feel pretty lucky to work with amazing people on an really cool thing. 🚀 🗺 </p>
+    </section>
+    <section id='seeya'>
+        <h3>See ya!</h3>
+        <p>Thanks for reading my resumap. I hope it helped show a little more of my story and what makes me me.</p></p>
+    </section>
+</div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoiam9lY2NsYXJrIiwiYSI6ImNqb2FmbjdkeDA1cXkzcXE3enZvY2RnbGIifQ.qWww4e5rc_APjaClC8Z9Zg';
+
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/joecclark/cj2jus5o2000i2rnwjdjn6qa3',
+        bearing: -0,
+        center: [-108.866174, 49.272291],
+        zoom: 2,
+        speed: 0.8,
+        pitch: 0
+});
+
+var chapters = {
+    'welcome': {
+        bearing: -0,
+        center: [-108.866174, 49.272291],
+        zoom: 2,
+        speed: 0.8,
+        pitch: 0
+    },
+    'seattleu': {
+        bearing: -15,
+        center: [-122.318300, 47.609250],
+        zoom: 16.7,
+        pitch: 45
+    },
+    'join': {
+        center: [-122.580020, 45.533977],
+        bearing: -150,
+        zoom: 16.72,
+        speed: 0.6,
+        pitch: 45
+    },
+    'aaaa': {
+        bearing: -45,
+        center: [-149.903216, 61.198840],
+        zoom: 15.99,
+        speed: 0.6,
+        pitch: 45
+    },
+    'bbbs': {
+        bearing: 60,
+        center: [-134.408720, 58.300388],
+        zoom: 16.57,
+        speed: 0.6,
+        pitch: 45
+    },
+    'wssb': {
+        bearing: 150,
+        center: [-122.649519, 45.632255],
+        zoom: 15.93,
+        pitch: 45,
+        speed: 0.6
+    },
+        'appalachiantrail': {
+        bearing: 0,
+        center: [-73.166286, 42.693970],
+        zoom: 5.42,
+        pitch: 0,
+        speed: 0.6
+    },
+        'mapbox': {
+        bearing: -29.60,
+        center: [-122.661895, 45.523444],
+        zoom: 16.16,
+        pitch: 18.50,
+        speed: 0.6
+    },
+    'seeya': {
+        bearing: -0,
+        center: [-108.866174, 49.272291],
+        zoom: 2,
+        speed: 0.8,
+        pitch: 0
+    },
+    'interests': {
+        bearing: -0,
+        center: [-108.866174, 49.272291],
+        zoom: 2,
+        speed: 0.8,
+        pitch: 0
+    }
+};
+
+// On every scroll event, check which element is on screen
+window.onscroll = function() {
+    var chapterNames = Object.keys(chapters);
+    for (var i = 0; i < chapterNames.length; i++) {
+        var chapterName = chapterNames[i];
+        if (isElementOnScreen(chapterName)) {
+            setActiveChapter(chapterName);
+            break;
+        }
+    }
+};
+
+var activeChapterName = 'baker';
+function setActiveChapter(chapterName) {
+    if (chapterName === activeChapterName) return;
+
+    map.flyTo(chapters[chapterName]);
+
+    document.getElementById(chapterName).setAttribute('class', 'active');
+    document.getElementById(activeChapterName).setAttribute('class', '');
+
+    activeChapterName = chapterName;
+}
+
+function isElementOnScreen(id) {
+    var element = document.getElementById(id);
+    var bounds = element.getBoundingClientRect();
+    return bounds.top < window.innerHeight && bounds.bottom > 0;
+}
+
+</script>
+
+</body>
+</html>
