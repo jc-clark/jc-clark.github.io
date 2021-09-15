@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-Thanks for stopping by. Check out my projects on the sidebar if you feel so inclined. 
+Thanks for stopping by. I'm a brother, uncle, photographer, musician, and serial hobbyist. Check out my projects on the sidebar if you feel so inclined. This website is a work in progress but I wouldn't want to host it any other way.
 
-Whatever you do, I hope you have a nice day and find space to take care of yourself and others. 
-
-Walk in baby steps. It's more fun.
+Whatever you do, I hope you have a nice day and find space to take care of yourself and others.
