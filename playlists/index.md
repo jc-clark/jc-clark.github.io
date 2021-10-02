@@ -6,6 +6,12 @@ layout: default
 
 ### 2021 - Fall
 <div class='embed-container'>
+<iframe src="https://open.spotify.com/embed/playlist/7qy1Bo7AfAR8buEzDPqvdG" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</div>
+<br>
+
+### 2021 - Summer
+<div class='embed-container'>
 <iframe src="https://open.spotify.com/embed/playlist/2paQNRYOAXkEBbXE4ISgsp" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 </div>
 <br>
