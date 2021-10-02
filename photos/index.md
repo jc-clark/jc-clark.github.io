@@ -1,3 +1,1 @@
-![the-figure](https://pro2-bar-s3-cdn-cf1.myportfolio.com/6c97c91a-603d-48f1-9377-26285d43f6df/9a32aceb-42b9-46f0-b43b-4fb971b2c35f_rw_1920.jpg?h=015d06207834a7ab4061ef2de7fe5427&url=aHR0cHM6Ly9waG90b3MuYWRvYmUuaW8vdjIvY2F0YWxvZ3MvNzIwM2NiYzI5NjhhNGIxY2FmYWYyNThmOWMwYWI3NTQvYXNzZXRzL2QzMjI2ODcwZDE5MjRiZWJiYjJkYzZmY2Y4NGU2OWRmL3JldmlzaW9ucy84MjAwYmU0OGMxYTc0ZTBiYWI5N2M0MzJhYzEzN2Q5MS9yZW5kaXRpb25zLzAzOTAwYTNlMTRmMzM1MjhlMTcwYWJhNzNjOTdkYWM0)
-
 ![the-figure](https://user-images.githubusercontent.com/31087804/135733380-7971b1bc-8d0b-4a38-9591-a5167c4106a9.jpeg)
