@@ -1,6 +1,6 @@
 title: Joe Clark
 logo: /assets/img/joe_and_tony.png
-description: ^Joe and Tony
+# description: 
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
